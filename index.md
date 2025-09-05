@@ -405,7 +405,7 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
-{% include custom-schedule.html %}
+
 <p>This workshop is teaching a lesson in 
   <a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>
 </p>
@@ -423,6 +423,8 @@ Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
 how one of these schedule tables is constructed.
 {% endcomment %}
+
+{% include custom-schedule.html %}
 
 {% if site.pilot %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:{{page.email}}">contact the workshop organisers</a> if you would like more information about the planned schedule.
