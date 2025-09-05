@@ -398,14 +398,6 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-
 <p>This workshop is teaching a lesson in 
   <a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>
 </p>
@@ -416,6 +408,15 @@ of code below the Schedule `<h2>` header below with
   <br>
   <a href="https://carpentries-lab.github.io/deep-learning-intro/">Introduction to Deep Learning</a>
 </p>
+
+{% if site.carpentry == "swc" %}
+{% include swc/schedule.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/schedule.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/schedule.html %}
+{% elsif site.carpentry == "incubator" %}
+{% include custom-schedule.html %}
 {% endif %}
 
 {% comment %}
@@ -423,8 +424,6 @@ Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
 how one of these schedule tables is constructed.
 {% endcomment %}
-
-{% include custom-schedule.html %}
 
 {% if site.pilot %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:{{page.email}}">contact the workshop organisers</a> if you would like more information about the planned schedule.
