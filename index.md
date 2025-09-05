@@ -415,9 +415,6 @@ of code below the Schedule `<h2>` header below with
   <br>
   <a href="https://carpentries-lab.github.io/deep-learning-intro/">Introduction to Deep Learning</a>
 </p>
-
-#This workshop is teaching a lesson in 
-#<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
 {% endif %}
 
 {% comment %}
@@ -492,7 +489,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-<a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+Please check the "Setup" pages of
+<a href="https://carpentries-incubator.github.io/machine-learning-novice-sklearn/">Introduction to Machine Learning with Scikit Learn</a> and <a href="https://carpentries-lab.github.io/deep-learning-intro/">Introduction to Deep Learning</a> for instructions to follow to obtain the software and data you will need to follow the lesson.
 {% endif %}
