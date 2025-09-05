@@ -406,7 +406,7 @@ of code below the Schedule `<h2>` header below with
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 <p>This workshop is teaching a lesson in 
-  <a hrefhttps:"//carpentries-incubator.org/">The Carpentries Incubator</a>
+  <a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>
 </p>
 
 <p>Details of the lessons can be found at:
